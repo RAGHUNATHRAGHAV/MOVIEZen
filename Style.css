@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.head{
+    background-color: black;
+    padding: 10px;
+}
+
+.head-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+}
+.head-wrapper>div:nth-child(1)>h1{
+    color: white;
+}
+.head-wrapper>div:nth-child(1)>h1>span{
+    color: red;
+}
+select{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: 700;
+}
+.head-wrapper>div:nth-child(2)>a{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: 700;
+    align-items: center;
+}
+.head-wrapper >div:nth-child(2){
+    display: flex;
+    gap: 20px;
+}
+.banner{ 
+    background-image: url(./disney\ banner\ img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+}
+.banner-wrapper{
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+
+.banner-wrapper>h1{
+    margin-bottom: 5px;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    
+}
+.banner-wrapper>span{
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+.banner-wrapper>p{
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.banner-wrapper>div{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+.banner-wrapper>div>input{
+    width: 30%;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+}
+
+.banner-wrapper>div>input:focus{
+    outline: none;
+}
+.banner-wrapper>div>a{
+    border-radius: 5px;
+    background-color: red;
+    padding: 20px 20px;
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 700;
+    width: 20%;
+} 
+.banner-wrapper>div>a>i{
+ margin-left: 10px;
+}
+.movie{
+    color: white;
+    background-color: black;
+}
+.movie-wrapper>div{
+    display: flex;
+    align-items: center;
+}
+
+.movie-wrapper>div:nth-child(2)>div:nth-child(1){
+    order: 2;
+    
+}
+.movie-wrapper>div:nth-child(4)>div:nth-child(1){
+    order: 2;
+    
+}
+.movie-wrapper>div:nth-child(1){
+    border-bottom: 5px solid grey;
+}
+.movie-wrapper>div:nth-child(2){
+    border-bottom: 5px solid grey;
+}
+.movie-wrapper>div:nth-child(3){
+
+    border-bottom: 5px solid grey;
+}
+.movie-wrapper>div:nth-child(4){
+    border-bottom: 5px solid grey;
+}
+.movie-wrapper>div:nth-child(1)>div:nth-child(1)>h1{
+    font-size: 50px;
+}
+.movie-wrapper>div:nth-child(2)>div:nth-child(1)>h1{
+    font-size: 50px;
+}
+.movie-wrapper>div:nth-child(3)>div:nth-child(1)>h1{
+    font-size: 50px;
+}
+.movie-wrapper>div:nth-child(4)>div:nth-child(1)>h1{
+    font-size: 50px;
+}
+.movie-wrapper>div:nth-child(1)>div:nth-child(1){
+ padding: 0 25px;
+}
+.movie-wrapper>div:nth-child(2)>div:nth-child(1){
+    padding: 0 25px;
+}
+.movie-wrapper>div:nth-child(3)>div:nth-child(1){
+    padding: 0 25px;
+}
+.movie-wrapper>div:nth-child(4)>div:nth-child(1){
+    padding: 0 25px;
+}
+.foot-wrapper{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+}
+.foot{
+    background-color: black;
+    border-bottom: 5px solid grey;
+}
+
+.foot-box{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+    width: 20%;
+}
+.foot-box>a{
+    color: white;
+}
+.copy>span{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 20px;
+}
+.copy>h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.copy>h1>span{
+    color: red;
+}
+@media screen and (max-width: 1000px) {
+    select{
+        display: none;
+    }
+    .head-wrapper >div:nth-child(2)a{
+        border-radius: 3px;
+        padding: 5px 10px;
+    }
+    .banner{ 
+        height: 800px;
+    }
+    .banner-wrapper>div{
+        flex-direction: column;
+    }
+    .banner-wrapper>div>input{
+        width:80%;
+    }
+    .banner-wrapper>div>a{
+        width:35%;
+    }
+    .movie-wrapper>div:nth-child(1)>div:nth-child(1)>h1{
+        font-size: 25px;
+    }
+    .movie-wrapper>div:nth-child(2)>div:nth-child(1)>h1{
+        font-size: 25px;
+    }
+    .movie-wrapper>div:nth-child(3)>div:nth-child(1)>h1{
+        font-size: 25px;
+    }
+    .movie-wrapper>div:nth-child(4)>div:nth-child(1)>h1{
+        font-size: 25px;
+    }
+    
+    .movie-wrapper>div:nth-child(1)>div:nth-child(2){
+        width: 50%;
+        height: 50%;
+    }
+    
+    .movie-wrapper>div:nth-child(1){
+        flex-direction: column;
+    }
+    
+    .movie-wrapper>div:nth-child(2)>div:nth-child(2){
+    
+        width: 50%;
+        height: 50%;
+    }
+    
+    .movie-wrapper>div:nth-child(2){
+        flex-direction: column;
+    }
+    .movie-wrapper>div:nth-child(3)>div:nth-child(2){
+        width: 50%;
+        height: 50%;
+    }
+    .movie-wrapper>div:nth-child(3){
+        flex-direction: column;
+    }
+    .movie-wrapper>div:nth-child(4)>div:nth-child(2){
+        width: 50%;
+        height: 50%;
+    }
+    .movie-wrapper>div:nth-child(4){
+        flex-direction: column;
+    }
+    .movie-wrapper>div:nth-child(2)>div:nth-child(2){
+        order: 2;
+    }
+    .movie-wrapper>div:nth-child(2)>div:nth-child(1){
+        order: 1;
+
+    }
+
+    .movie-wrapper>div:nth-child(4)>div:nth-child(2){
+        order: 2;
+    }
+    .movie-wrapper>div:nth-child(4)>div:nth-child(1){
+        order: 1;
+    }
+
+    .movie-wrapper>div:nth-child(1)>div:nth-child(1),
+    .movie-wrapper>div:nth-child(2)>div:nth-child(1),
+    .movie-wrapper>div:nth-child(3)>div:nth-child(1),
+    .movie-wrapper>div:nth-child(4)>div:nth-child(1){
+        text-align: center;
+    }
+    .foot-box{
+        width: 40%;
+        padding: 20px;
+        gap: 5px;
+    }
+    .foot-wrapper{
+        flex-wrap: wrap;
+    }
+}
+    
+    
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
